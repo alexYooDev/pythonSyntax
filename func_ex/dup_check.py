@@ -1,14 +1,14 @@
 
 def solution(arr):
 
-  newList = {}
+  temp = {}
   answer = []
   i = 0
-
+  
   for i in arr:
     if arr.count(i) > 1:
-      newList[i] = arr.count(i)
-      answer = list(newList.values())
+      temp[i] = arr.count(i)
+      answer = list(temp.values())
 
   if arr.count(i) <= 1 or len(arr) == 0:
     answer.append(-1)
